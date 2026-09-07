@@ -157,8 +157,8 @@ def generate_with_gemini(day: int, stack: Dict[str, Any], history: List[Dict[str
 
         client = genai.Client(api_key=api_key)
         
-        # Try gemini-2.5-flash or gemini-2.0-flash with fallback to gemini-1.5-flash
-        models_to_try = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+        # Try modern Gemini models starting with gemini-3.6-flash
+        models_to_try = ["gemini-3.6-flash", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
         last_err = None
 
         for model_name in models_to_try:

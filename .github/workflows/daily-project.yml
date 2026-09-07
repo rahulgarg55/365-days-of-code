@@ -76,8 +76,8 @@ jobs:
 
       - name: 🚀 Commit & Push Generated Project
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Priyanka Mittal"
+          git config user.email "priya1997mittal@gmail.com"
           git add .
 
           if git diff --staged --quiet; then
@@ -88,8 +88,20 @@ jobs:
             TITLE=$(python -c "import json; h=json.load(open('projects_history.json')); print(h[-1]['title'])")
             STACK=$(python -c "import json; h=json.load(open('projects_history.json')); print(h[-1]['tech_stack'])")
 
-            COMMIT_MSG="🚀 Day ${DAY}: ${TITLE} [${STACK}]"
+            COMMIT_MSG=$(cat <<EOF
+🚀 Day ${DAY}: ${TITLE} [${STACK}]
+
+Co-authored-by: Rahul Garg <gargr0109@gmail.com>
+EOF
+)
             echo "Committing: $COMMIT_MSG"
             git commit -m "$COMMIT_MSG"
             git push origin HEAD:${{ github.ref_name }}
+
+            # Mirror push to rahul's repo if RAHUL_GITHUB_PAT is provided
+            if [ -n "${{ secrets.RAHUL_GITHUB_PAT }}" ]; then
+              echo "Mirroring to rahulgarg55/365-days-of-code..."
+              git remote add rahul "https://${{ secrets.RAHUL_GITHUB_PAT }}@github.com/rahulgarg55/365-days-of-code.git" || true
+              git push rahul HEAD:${{ github.ref_name }} || echo "Could not push to rahul repository (ensure repo exists)"
+            fi
           fi
