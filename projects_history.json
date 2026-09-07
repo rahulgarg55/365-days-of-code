@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "day": 1,
+    "title": "Token Bucket Rate Limiter (MERN)",
+    "slug": "mern-rate-limiter",
+    "tech_stack": "MERN / Node.js & React Full-Stack",
+    "difficulty": "Intermediate",
+    "summary": "A high-performance token-bucket rate limiter engine designed to prevent API abuse with dynamic burst capacity and SQLite persistence.",
+    "key_features": [
+      "Token bucket algorithm with fractional refill calculations",
+      "Persistent SQLite storage with atomic transactional decrements",
+      "Configurable rate limit windows per client IP or API key",
+      "Standard RFC 6585 compliant HTTP rate limit response headers"
+    ],
+    "tags": [
+      "rate-limiting",
+      "security",
+      "algorithms",
+      "performance"
+    ],
+    "generated_at": "2026-09-07T05:57:41.805930+00:00"
+  }
+]

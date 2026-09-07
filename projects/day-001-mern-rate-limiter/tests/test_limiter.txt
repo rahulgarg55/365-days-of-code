@@ -1,0 +1,1 @@
+Test Suite: Rate limiter ensures 100 requests per minute ceiling.

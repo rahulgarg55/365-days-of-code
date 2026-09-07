@@ -1,6 +1,6 @@
 # 🚀 365 Days of Code: Daily Engineering Showcase
 
-![Progress](https://img.shields.io/badge/Progress-0%20%2F%20365%20Days-lightgrey?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-1%20%2F%20365%20Days-brightgreen?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Daily%20Automation-Active-blue?style=for-the-badge)
 ![AI Powered](https://img.shields.io/badge/Engine-Google%20Gemini-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -18,12 +18,12 @@ Every single day at **00:00 UTC**, an automated GitHub Action workflow executes,
 ---
 
 ## 📊 Progress Dashboard
-- **Completed**: `0 / 365` mini-projects (0.0%)
-- **Last Updated**: *Pending First Run*
+- **Completed**: `1 / 365` mini-projects (0.3%)
+- **Last Updated**: `2026-09-07 05:57 UTC`
 
 | Day | Project Title | Tech Stack | Concepts / Tags | Code Link |
 | :--- | :--- | :--- | :--- | :--- |
-| *Day 001* | *First project generating soon!* | - | - | - |
+| **Day 001** | [Token Bucket Rate Limiter (MERN)](./projects/day-001-mern-rate-limiter) | `MERN / Node.js & React Full-Stack` | `rate-limiting` `security` `algorithms` | [View Code](./projects/day-001-mern-rate-limiter) |
 
 ---
 
