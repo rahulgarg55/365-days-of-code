@@ -1,6 +1,6 @@
 # 🚀 365 Days of Code: Daily Engineering Showcase
 
-![Progress](https://img.shields.io/badge/Progress-1%20%2F%20365%20Days-brightgreen?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-2%20%2F%20365%20Days-brightgreen?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Daily%20Automation-Active-blue?style=for-the-badge)
 ![AI Powered](https://img.shields.io/badge/Engine-Google%20Gemini-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -18,11 +18,12 @@ Every single day at **00:00 UTC**, an automated GitHub Action workflow executes,
 ---
 
 ## 📊 Progress Dashboard
-- **Completed**: `1 / 365` mini-projects (0.3%)
-- **Last Updated**: `2026-09-07 05:57 UTC`
+- **Completed**: `2 / 365` mini-projects (0.5%)
+- **Last Updated**: `2026-09-07 06:33 UTC`
 
 | Day | Project Title | Tech Stack | Concepts / Tags | Code Link |
 | :--- | :--- | :--- | :--- | :--- |
+| **Day 002** | [Token Bucket Rate Limiter (PHP)](./projects/day-002-php-rate-limiter) | `PHP Modern (OOP & Micro-Service)` | `rate-limiting` `security` `algorithms` | [View Code](./projects/day-002-php-rate-limiter) |
 | **Day 001** | [Token Bucket Rate Limiter (MERN)](./projects/day-001-mern-rate-limiter) | `MERN / Node.js & React Full-Stack` | `rate-limiting` `security` `algorithms` | [View Code](./projects/day-001-mern-rate-limiter) |
 
 ---
