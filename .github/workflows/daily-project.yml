@@ -88,13 +88,7 @@ jobs:
             TITLE=$(python -c "import json; h=json.load(open('projects_history.json')); print(h[-1]['title'])")
             STACK=$(python -c "import json; h=json.load(open('projects_history.json')); print(h[-1]['tech_stack'])")
 
-            COMMIT_MSG=$(cat <<EOF
-🚀 Day ${DAY}: ${TITLE} [${STACK}]
-
-Co-authored-by: Rahul Garg <gargr0109@gmail.com>
-EOF
-)
-            echo "Committing: $COMMIT_MSG"
+                                COMMIT_MSG=$(printf "\xF0\x9F\x9A\x80 Day %s: %s [%s]\n\nCo-authored-by: Rahul Garg <gargr0109@gmail.com>" "$DAY" "$TITLE" "$STACK")
             git commit -m "$COMMIT_MSG"
             git push origin HEAD:${{ github.ref_name }}
 
