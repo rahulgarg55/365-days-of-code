@@ -208,5 +208,26 @@
       "performance"
     ],
     "generated_at": "2026-09-11T03:07:28.292706+00:00"
+  },
+  {
+    "day": 11,
+    "title": "Token Bucket Rate Limiter (MERN)",
+    "slug": "mern-rate-limiter",
+    "tech_stack": "MERN / Node.js & React Full-Stack",
+    "difficulty": "Intermediate",
+    "summary": "A resilient, thread-safe token-bucket rate limiting engine implemented in MERN / Node.js & React Full-Stack with fractional refill algorithms and RFC 6585 compliance.",
+    "key_features": [
+      "Token bucket algorithm with high-precision fractional refill calculations",
+      "Configurable burst capacity and dynamic refill frequencies",
+      "Standard RFC 6585 HTTP rate limiting headers (X-RateLimit-Limit, Retry-After)",
+      "Self-contained test suite verifying burst and replenishment limits"
+    ],
+    "tags": [
+      "rate-limiting",
+      "security",
+      "algorithms",
+      "performance"
+    ],
+    "generated_at": "2026-09-12T03:14:08.272759+00:00"
   }
 ]
